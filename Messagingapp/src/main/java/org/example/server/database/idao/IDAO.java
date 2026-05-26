@@ -1,0 +1,16 @@
+package org.example.server.database.idao;
+
+import java.util.List;
+
+public interface IDAO<T> {
+
+    boolean create(T object);
+
+    T findById(int id);
+
+    List<T> findAll();
+
+    boolean update(T object);
+
+    boolean delete(int id);
+}

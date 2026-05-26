@@ -1,0 +1,485 @@
+/* ═══════════════════════════════════════════
+   ROOT & GENERAL
+═══════════════════════════════════════════ */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-background-color: #FFFFFF;
+}
+
+/* ═══════════════════════════════════════════
+   LOGIN PAGE (thème WhatsApp sombre)
+═══════════════════════════════════════════ */
+.wa-login-root {
+    -fx-background-color: #111B21;
+}
+
+.wa-login-card {
+    -fx-background-color: #202C33;
+    -fx-background-radius: 16;
+    -fx-padding: 32 36 32 36;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 24, 0, 0, 6);
+}
+
+.wa-login-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-fill: #00A884;
+}
+
+.wa-login-subtitle {
+    -fx-font-size: 13px;
+    -fx-text-fill: #8696A0;
+}
+
+.wa-login-label {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00A884;
+    -fx-letter-spacing: 1px;
+}
+
+.wa-login-field {
+    -fx-background-color: #2A3942;
+    -fx-background-radius: 8;
+    -fx-border-color: transparent;
+    -fx-border-radius: 8;
+    -fx-padding: 10 14 10 14;
+    -fx-font-size: 14px;
+    -fx-text-fill: #E9EDEF;
+    -fx-prompt-text-fill: #8696A0;
+    -fx-pref-height: 42px;
+}
+
+.wa-login-field:focused {
+    -fx-border-color: #00A884;
+    -fx-border-width: 1;
+}
+
+.wa-btn-primary {
+    -fx-background-color: #00A884;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 12 28 12 28;
+    -fx-cursor: hand;
+    -fx-min-width: 280px;
+    -fx-pref-width: 320px;
+}
+
+.wa-btn-primary:hover {
+    -fx-background-color: #008f72;
+}
+
+/* Ancien login rose (conservé si besoin) */
+.login-root {
+    -fx-background-color: linear-gradient(to bottom right, #FCE4EC, #F8BBD9);
+}
+
+.login-card {
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-padding: 40;
+    -fx-effect: dropshadow(gaussian, rgba(233,30,140,0.2), 30, 0, 0, 8);
+}
+
+.login-title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-fill: #E91E8C;
+}
+
+.login-subtitle {
+    -fx-font-size: 13px;
+    -fx-text-fill: #9E9E9E;
+}
+
+.login-label {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #E91E8C;
+    -fx-letter-spacing: 1px;
+}
+
+.login-field {
+    -fx-background-color: #FFF0F5;
+    -fx-background-radius: 12;
+    -fx-border-color: #F8BBD9;
+    -fx-border-radius: 12;
+    -fx-border-width: 1.5;
+    -fx-padding: 10 16 10 16;
+    -fx-font-size: 14px;
+    -fx-pref-height: 42px;
+}
+
+.login-field:focused {
+    -fx-border-color: #E91E8C;
+    -fx-effect: dropshadow(gaussian, rgba(233,30,140,0.25), 8, 0, 0, 0);
+}
+
+.btn-primary {
+    -fx-background-color: #E91E8C;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 12;
+    -fx-padding: 12 28 12 28;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(233,30,140,0.4), 10, 0, 0, 4);
+    -fx-min-width: 300px;
+    -fx-pref-width: 320px;
+    -fx-max-width: 360px;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #C2185B;
+    -fx-effect: dropshadow(gaussian, rgba(233,30,140,0.6), 14, 0, 0, 5);
+}
+
+/* ═══════════════════════════════════════════
+   SIDEBAR
+═══════════════════════════════════════════ */
+.sidebar {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: transparent #FCE4EC transparent transparent;
+    -fx-border-width: 0 1 0 0;
+    -fx-min-width: 300px;
+    -fx-max-width: 300px;
+}
+
+.sidebar-header {
+    -fx-background-color: #FCE4EC;
+    -fx-padding: 16;
+}
+
+.sidebar-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #E91E8C;
+}
+
+/* ═══════════════════════════════════════════
+   CONTACT LIST
+═══════════════════════════════════════════ */
+.contact-list {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.contact-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-border-color: transparent transparent #FCE4EC transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.contact-list .list-cell:selected {
+    -fx-background-color: #FFF0F5;
+}
+
+.contact-list .list-cell:hover {
+    -fx-background-color: #FFF9FB;
+}
+
+.contact-name {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #212121;
+}
+
+.contact-status {
+    -fx-font-size: 12px;
+    -fx-text-fill: #E91E8C;
+}
+
+/* ═══════════════════════════════════════════
+   CHAT HEADER
+═══════════════════════════════════════════ */
+.chat-header {
+    -fx-background-color: #FCE4EC;
+    -fx-padding: 12 16 12 16;
+    -fx-border-color: transparent transparent #F8BBD9 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.chat-header-name {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #212121;
+}
+
+.chat-header-status {
+    -fx-font-size: 12px;
+    -fx-text-fill: #E91E8C;
+}
+
+/* ═══════════════════════════════════════════
+   CHAT AREA
+═══════════════════════════════════════════ */
+.chat-area {
+    -fx-background-color: #FFF9FB;
+}
+
+.chat-area .viewport {
+    -fx-background-color: #FFF9FB;
+}
+
+.message-list {
+    -fx-background-color: transparent;
+    -fx-padding: 12 16 12 16;
+    -fx-spacing: 6;
+}
+
+/* ═══════════════════════════════════════════
+   MESSAGE BUBBLES
+═══════════════════════════════════════════ */
+.bubble-out {
+    -fx-background-color: #F8BBD9;
+    -fx-background-radius: 18 4 18 18;
+    -fx-padding: 10 14 10 14;
+    -fx-effect: dropshadow(gaussian, rgba(233,30,140,0.15), 6, 0, 0, 2);
+    -fx-max-width: 360px;
+}
+
+.bubble-in {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 4 18 18 18;
+    -fx-padding: 10 14 10 14;
+    -fx-border-color: #FCE4EC;
+    -fx-border-radius: 4 18 18 18;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 6, 0, 0, 2);
+    -fx-max-width: 360px;
+}
+
+.bubble-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #212121;
+    -fx-wrap-text: true;
+}
+
+.bubble-time {
+    -fx-font-size: 11px;
+    -fx-text-fill: #9E9E9E;
+}
+
+/* ═══════════════════════════════════════════
+   INPUT BAR
+═══════════════════════════════════════════ */
+.input-bar {
+    -fx-background-color: #FCE4EC;
+    -fx-padding: 12 16 12 16;
+    -fx-border-color: #F8BBD9 transparent transparent transparent;
+    -fx-border-width: 1 0 0 0;
+}
+
+.message-input {
+    -fx-background-color: white;
+    -fx-background-radius: 24;
+    -fx-border-color: #F8BBD9;
+    -fx-border-radius: 24;
+    -fx-border-width: 1;
+    -fx-padding: 10 18 10 18;
+    -fx-font-size: 14px;
+}
+
+.message-input:focused {
+    -fx-border-color: #E91E8C;
+    -fx-effect: dropshadow(gaussian, rgba(233,30,140,0.2), 8, 0, 0, 0);
+}
+
+.btn-send {
+    -fx-background-color: #E91E8C;
+    -fx-text-fill: white;
+    -fx-background-radius: 50%;
+    -fx-min-width: 44px;
+    -fx-min-height: 44px;
+    -fx-max-width: 44px;
+    -fx-max-height: 44px;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+}
+
+.btn-send:hover {
+    -fx-background-color: #C2185B;
+}
+
+/* ═══════════════════════════════════════════
+   CALL BUTTONS (chat header)
+═══════════════════════════════════════════ */
+.btn-audio-call {
+    -fx-background-color: #E91E8C;
+    -fx-text-fill: white;
+    -fx-background-radius: 50%;
+    -fx-min-width: 38px;
+    -fx-min-height: 38px;
+    -fx-max-width: 38px;
+    -fx-max-height: 38px;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+}
+
+.btn-audio-call:hover {
+    -fx-background-color: #C2185B;
+}
+
+.btn-video-call {
+    -fx-background-color: #E91E8C;
+    -fx-text-fill: white;
+    -fx-background-radius: 50%;
+    -fx-min-width: 38px;
+    -fx-min-height: 38px;
+    -fx-max-width: 38px;
+    -fx-max-height: 38px;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+}
+
+.btn-video-call:hover {
+    -fx-background-color: #C2185B;
+}
+
+/* ═══════════════════════════════════════════
+   SCROLLBAR
+═══════════════════════════════════════════ */
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 6px;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #F8BBD9;
+    -fx-background-radius: 3px;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-pref-height: 0;
+}
+
+/* ═══════════════════════════════════════════
+   SEPARATOR
+═══════════════════════════════════════════ */
+.separator .line {
+    -fx-border-color: #FCE4EC;
+    -fx-border-width: 1 0 0 0;
+}
+
+/* ═══════════════════════════════════════════
+   ALERTS & DIALOGS
+═══════════════════════════════════════════ */
+.dialog-pane {
+    -fx-background-color: white;
+}
+
+.dialog-pane .button {
+    -fx-background-color: #E91E8C;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #C2185B;
+}
+
+/* ═══════════════════════════════════════════
+   CALL VIEW  ← AJOUT
+═══════════════════════════════════════════ */
+
+/* Fond rose dégradé du haut vers le bas */
+.call-root {
+    -fx-background-color: linear-gradient(to bottom, #F8BBD9, #FCE4EC, #FFF0F5);
+}
+
+/* Nom du peer */
+.call-peer-name {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #880E4F;
+}
+
+/* Statut "Appel en cours..." */
+.call-status-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #E91E8C;
+}
+
+/* Anneau extérieur — ovale rose foncé */
+.call-avatar-ring {
+    -fx-background-color: #E91E8C;
+    -fx-background-radius: 50%;
+    -fx-min-width: 200px;
+    -fx-min-height: 140px;
+    -fx-max-width: 200px;
+    -fx-max-height: 140px;
+    -fx-effect: dropshadow(gaussian, rgba(233,30,140,0.40), 20, 0, 0, 6);
+}
+
+/* Cercle intérieur */
+.call-avatar-inner {
+    -fx-background-color: #E91E8C;
+    -fx-background-radius: 50%;
+    -fx-min-width: 160px;
+    -fx-min-height: 110px;
+    -fx-max-width: 160px;
+    -fx-max-height: 110px;
+}
+
+/* Bouton terminer appel — rouge vif */
+.btn-end-call {
+    -fx-background-color: #E53935;
+    -fx-text-fill: white;
+    -fx-background-radius: 50%;
+    -fx-min-width: 56px;
+    -fx-min-height: 56px;
+    -fx-max-width: 56px;
+    -fx-max-height: 56px;
+    -fx-font-size: 22px;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(229,57,53,0.50), 12, 0, 0, 4);
+}
+
+.btn-end-call:hover {
+    -fx-background-color: #C62828;
+}
+
+/* Bouton muet — rose pâle */
+.btn-mute {
+    -fx-background-color: #F8BBD9;
+    -fx-text-fill: #880E4F;
+    -fx-background-radius: 50%;
+    -fx-min-width: 52px;
+    -fx-min-height: 52px;
+    -fx-max-width: 52px;
+    -fx-max-height: 52px;
+    -fx-font-size: 18px;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(233,30,140,0.20), 8, 0, 0, 2);
+}
+
+.btn-mute:hover {
+    -fx-background-color: #F48FB1;
+}
+
+/* Panneau vidéo — rose très pâle arrondi */
+.video-panel {
+    -fx-background-color: #FCE4EC;
+    -fx-background-radius: 16;
+    -fx-effect: dropshadow(gaussian, rgba(233,30,140,0.15), 10, 0, 0, 3);
+}
+
+.video-placeholder {
+    -fx-font-size: 13px;
+    -fx-text-fill: #F48FB1;
+}
